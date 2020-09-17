@@ -1,3 +1,48 @@
+//Number
+var num = 100;
+console.log(num);
+
+//String
+var string = "THIS IS A string";
+console.log(string);
+
+//Boolean
+var bool = true;
+console.log(bool);
+
+//Undefined
+var object;
+console.log(object);
+
+//Reassigning a variable - NULL
+object = null;
+console.log(object);
+
+
+//Array holding same data type
+var arr1 = [1, 2, 3, 4, 5];
+console.log(arr1);
+console.log(arr1[2]);
+
+//Array holding different data types
+var arr2 = ["Naqi", 12, true];
+console.log(arr2);
+console.log(arr2[0]);
+
+//Array holding a list of arrays
+var arr3 = [[1,2], [2,3], [3,4], [4,5]];
+console.log(arr3);
+console.log(arr3[1]);
+console.log(arr3[1][0]);
+
+arr3.push("Naqi");
+console.log(arr3);
+
+
+arr3.pop();
+console.log(arr3);
+
+
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -82,3 +127,25 @@ function keyPressed(){
         slingshot.attach(bird.body);
     }
 }
+
+
+/*
+Variables - To hold data
+
+Data Types:
+1. String
+2. Number
+3. Boolean: true/false
+4. Null: nothing/empty
+5. Undefined
+
+
+To hold multiple values - DATA STRUCTURES
+ARRAY
+- created inside []
+- List of variables of similar or different data types
+- Every is called an element
+- ELements are separated by a comma
+- lenth of an array = num of elements it contains
+- Index number = 0 - (length-1)
+*/
